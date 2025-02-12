@@ -6,7 +6,6 @@ package iron_package;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class F_System { //Clase que contiene funciones que utiliza este sistema pa que se vea mejor
     public static void clean_terminal() {
@@ -89,21 +88,4 @@ public class F_System { //Clase que contiene funciones que utiliza este sistema 
 
         return Output_Array;
     }
-
-    public static String Iterador_ArrayList(ArrayList Input_array){
-        Iterator iterador_array = Input_array.iterator(); //Se crea el iterador
-        String Output_text = "[";
-
-        while (iterador_array.hasNext()){ //Si existe un elemento siguiente en el array, se guarda en el output
-            Output_text = Output_text + iterador_array.next();
-            if (iterador_array.hasNext()){ //Si en el siguiente siclo se va a imprimir un elemento, se pone una ,
-                Output_text = Output_text + ", ";
-            }
-        }
-        Output_text = Output_text + "]";
-
-        return Output_text;
-    }
-
 }
-
