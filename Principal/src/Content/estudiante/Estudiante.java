@@ -2,13 +2,25 @@ package Content.estudiante;
 
 public class Estudiante {
     private int codigoAcademico;
-    public String nombre;
+    private String nombre;
     public String programaAcademico;
     public float promedioAcademico;
 
 
     public void setCodigoAcademico(int codigoAcademico) {
         this.codigoAcademico = codigoAcademico;
+    }
+
+    public int getCodigoAcademico() {
+        return this.codigoAcademico;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return this.nombre;
     }
 
     public float calcularNotaFinal(float parcial1, float parcial2, float nota3, float parcialfinal) {
@@ -22,8 +34,9 @@ public class Estudiante {
             "Nombre: " + nombre + '\n' +
             "Programa: " + programaAcademico + '\n' +
             "Promedio: " + promedioAcademico + '\n'
-
         );
 
     }
+
+
 }
